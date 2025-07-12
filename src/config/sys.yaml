@@ -1,0 +1,23 @@
+x-file:
+  bucket-dir-path: "./xfile01.data/"
+  bucket-info-path: "./config/bucket.info"
+  bucket-max-num: 1000000
+  index-dir-path: "./xfile01.index/"
+  # byte
+  file-block-size: 65536
+  file-block-max-num: 256
+  upload-file-thread: 100
+  download-file-thread: 100
+  file-index-db-path: "./config/xfile01.xdb"
+  auth-user-db-path: "./config/xuser.xdb"
+x-auth:
+  server-addr: http://123.56.229.196:8013
+  id-key: 
+  reg-lock-path: "./config/xauth.lock"
+
+app-log:
+  log-path: "./log/sys-main.log"
+  log-level: "error"
+  log-split: true
+  # mb
+  log-split-size-mb: 30
