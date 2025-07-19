@@ -10,6 +10,9 @@ x-file:
   download-file-thread: 100
   file-index-db-path: "./config/xfile01.xdb"
   auth-user-db-path: "./config/xuser.xdb"
+x-net:
+  share-port: 10123
+  
 x-auth:
   server-addr: http://123.56.229.196:8013
   id-key: 
