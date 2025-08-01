@@ -10,12 +10,20 @@ x-file:
   download-file-thread: 100
   file-index-db-path: "./config/xfile01.xdb"
   auth-user-db-path: "./config/xuser.xdb"
+  history-lock-path: "./config/xhistory.lock"
+
+# tcp / http
+
 x-net:
+  tf-mode: "http"
+  # 超时（min） 0代表不超时
+  tf-timeout: 0
   share-port: 10123
-  
+
+
 x-auth:
   server-addr: http://123.56.229.196:8013
-  id-key: 
+  id-key: xxxx
   reg-lock-path: "./config/xauth.lock"
 
 app-log:
